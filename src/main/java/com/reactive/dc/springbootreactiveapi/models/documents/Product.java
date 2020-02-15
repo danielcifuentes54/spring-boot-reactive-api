@@ -1,6 +1,5 @@
 package com.reactive.dc.springbootreactiveapi.models.documents;
 
-import com.reactive.dc.springbootreactiveapi.models.api.ApiResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,8 +16,8 @@ import java.time.LocalDate;
 @Document(collection = "products")
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Product {
 
     @Id
@@ -34,9 +33,9 @@ public class Product {
     private LocalDate createAt;
 
     @Valid
+    @NotNull
     private Category category;
 
     private String photo;
-
 
 }
