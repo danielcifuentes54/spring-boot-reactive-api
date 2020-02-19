@@ -27,4 +27,9 @@ public class CategoyServiceImpl implements CategoryService {
     public Mono<Category> save(Category category) {
         return categoryRepository.save(category);
     }
+
+    @Override
+    public Mono<Category> findByName(String id) {
+        return categoryRepository.findCategoryByName(id);
+    }
 }

@@ -10,5 +10,7 @@ public interface CategoryService {
 
     Mono<Category> findById(String id);
 
+    Mono<Category> findByName(String id);
+
     Mono<Category> save(Category category);
 }
