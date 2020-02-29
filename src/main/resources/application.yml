@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: service-products
   data:
     mongodb:
       uri: mongodb://localhost:27017/spring-boot
@@ -7,3 +9,7 @@ config:
   uploads:
     path: /tmp/
 
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
